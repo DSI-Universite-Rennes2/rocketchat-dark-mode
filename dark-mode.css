@@ -91,7 +91,7 @@ select,
  *************Dark Mode Settings***********
  ******************************************/
 body.dark-mode {
-
+	
 	/****************************** Custom Variables ******************************/
 	--primary-font-color: var(--color-gray-lightest);
 	--info-font-color: var(--color-gray-light);
@@ -326,6 +326,23 @@ body.dark-mode .chat-now {
 	color: var(--color-white);
 }
 
+/**************Chat file list*****************/
+
+body.dark-mode .attachments__item:hover, .attachments__item:active {
+	background-color: var(--color-darkest);
+}
+  
+body.dark-mode .attachments__content:hover, .attachments__content:active {
+	color: var(--primary-font-color);
+}
+  
+body.dark-mode .attachments__name {
+	color: var(--color-blue);
+}
+  
+body.dark-mode .attachments__name:hover, .attachments__name:active {
+	color: var(--color-light-blue);
+}
 
 /**************Code Highlights*****************/
 
@@ -371,7 +388,17 @@ body.dark-mode .hljs-number {
 	color: var(--color-orange);
 }
 
+/**************My Account******************/
 
+body.dark-mode .rc-form-legend,
+body.dark-mode .rc-form-label {
+  	color: var(--primary-font-color);
+}
+
+body.dark-mode .js-logout {
+  	color: var(--primary-font-color);
+  	border-color: var(--primary-font-color);
+}
 
 /**************Admin Panel******************/
 
@@ -389,7 +416,8 @@ body.dark-mode .sidebar-light {
 
 body.dark-mode .rcx-accordion-item__title,
 body.dark-mode .rcx-label__text,
-body.dark-mode .rcx-field__label{
+body.dark-mode .rcx-field__label,
+body.dark-mode .rcx-paragraph {
 	color: var(--color-white);
 }
 
@@ -447,7 +475,10 @@ body.dark-mode .rc-apps-section .rc-table-content .rc-table-info .rc-apps-catego
     background-color: var(--color-dark-medium);
 }
 
-
+body.dark-mode .rcx-select {
+	color: var(--primary-font-color);
+	background-color: var(--color-dark-medium);
+}
 
 /**************Login Page******************/
 
